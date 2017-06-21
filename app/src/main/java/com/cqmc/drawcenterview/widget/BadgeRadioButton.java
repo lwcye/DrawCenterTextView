@@ -112,8 +112,9 @@ public class BadgeRadioButton extends DrawableCenterRadioButton {
 
         if (null != mDrawableBackground && null != mBadgeText) {
             showShadowImpl(mBadgeShowShadow, mBadgeBackgroundPaint);
-            if (mBadgePadding > getOffSize()) {
-                mBadgePadding = (int) getOffSize();
+            float maxPadding = getOffSize();
+            if (mBadgePadding > maxPadding) {
+                mBadgeOffY = (int) (mBadgePadding - maxPadding);
             }
             if (mBadgeText.length() == 0) {
                 canvas.drawCircle((getWidth() + mDrawableBackground.getIntrinsicWidth()) / 2 + mBadgeOffX, mFontHeight / 2 + mBadgeOffY, mFontHeight / 2 + mBadgePadding, mBadgeBackgroundPaint);
