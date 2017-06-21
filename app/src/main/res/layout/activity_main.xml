@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cqmc.drawcenterview.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.cqmc.drawcenterview.widget.MeasureTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:textSize="21sp"/>
+
+            <com.cqmc.drawcenterview.widget.MeasureTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:text="1234567890"
+                android:textSize="28sp"/>
+
+            <com.cqmc.drawcenterview.widget.MeasureTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="abcdefghijklmnopqrstuvwxyz"
+                android:textSize="26sp"/>
+
+            <com.cqmc.drawcenterview.widget.DrawableCenterTextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimary"
+                android:drawableLeft="@mipmap/ic_launcher_round"
+                android:drawablePadding="5dp"
+                android:text="drawableLeft"/>
+
+            <com.cqmc.drawcenterview.widget.DrawableCenterTextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimary"
+                android:drawablePadding="5dp"
+                android:drawableTop="@mipmap/ic_launcher_round"
+                android:text="drawableTop"/>
+
+            <com.cqmc.drawcenterview.widget.DrawableCenterTextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimary"
+                android:drawablePadding="5dp"
+                android:drawableRight="@mipmap/ic_launcher_round"
+                android:text="drawableRight"/>
+
+            <com.cqmc.drawcenterview.widget.DrawableCenterTextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimary"
+                android:drawableBottom="@mipmap/ic_launcher_round"
+                android:drawablePadding="5dp"
+                android:text="drawableBottom"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
